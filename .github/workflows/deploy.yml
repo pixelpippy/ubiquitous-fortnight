@@ -39,15 +39,17 @@ jobs:
           cache: npm # 或者 yarn / pnpm
 
       - name: Install dependencies
-        run: npm ci # 或者 yarn install / pnpm install
+        run: npm ci
+        working-directory: ./vitepress-project
 
       - name: Build with VitePress
-        run: npm run docs:build # 确保你的 package.json 中有这个脚本
+        run: npm run build
+        working-directory: ./vitepress-project
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .vitepress-project/dist # VitePress 默认输出目录
+          path: vitepress-project/docs/.vitepress/dist
 
   # 部署工作
   deploy:
