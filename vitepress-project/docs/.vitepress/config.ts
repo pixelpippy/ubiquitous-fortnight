@@ -2,6 +2,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/ubiquitous-fortnight/', 
   lang: 'zh-CN',
   title: '学习笔记',
   description: '记录一些 Linux、LLM 与部署相关学习笔记。',
