@@ -13,12 +13,6 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: '20221024',
-        items: [
-          { text: 'Linux学习笔记', link: '/20221024/Linux学习笔记' }
-        ]
-      },
-      {
         text: '20251115',
         items: [
           { text: 'Linux安全运维手册', link: '/20251115/Linux安全运维手册' },
@@ -29,6 +23,12 @@ export default defineConfig({
         text: '20240325',
         items: [
           { text: 'Linux使用clash指南', link: '/20240325/Linux使用clash指南' }
+        ]
+      },
+      {
+        text: '20221024',
+        items: [
+          { text: 'Linux学习笔记', link: '/20221024/Linux学习笔记' }
         ]
       }
     ],
