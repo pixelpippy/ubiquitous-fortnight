@@ -1,0 +1,58 @@
+/* 增大导航栏文字大小 */
+.VPNavBar {
+  font-size: 1.15rem;
+}
+
+.VPNavBar .title {
+  font-size: 1.2rem;
+}
+
+.nav-links .nav-link,
+.nav-link {
+  font-size: 1.15rem;
+}
+
+/* 增大侧边栏文字大小 */
+.VPSidebar {
+  font-size: 1.1rem !important;
+}
+
+.VPSidebarItem,
+.VPNavScreenItem,
+.sidebar a,
+.sidebar .nav-item {
+  font-size: 1.1rem !important;
+}
+
+.VPSidebarItem.group > .title,
+.sidebar .nav-group > .nav-group-title,
+.nav-group-title {
+  font-weight: 600;
+  font-size: 1.15rem !important;
+}
+
+/* VitePress 默认侧边栏链接 */
+.VPNavItem a,
+.nav-links a,
+.sidebar-link {
+  font-size: 1.1rem !important;
+}
+
+/* 增大页面导航（outline）文字大小 */
+.outline-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.outline {
+  font-size: 1.05rem;
+}
+
+.outline-link,
+.outline .outline-link {
+  font-size: 1.05rem;
+}
+
+.outline-link.active {
+  font-size: 1.05rem;
+}
