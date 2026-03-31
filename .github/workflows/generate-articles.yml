@@ -1,0 +1,39 @@
+name: Generate Articles
+
+on:
+  push:
+    branches:
+      - main
+      - cloudflare-branch
+    paths:
+      - 'vitepress-project/docs/**/*.md'
+      - 'vitepress-project/package.json'
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: cd vitepress-project && npm install
+      
+      - name: Generate articles
+        run: cd vitepress-project && npm run generate
+      
+      - name: Commit and push changes
+        run: |
+          cd vitepress-project
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add docs/articles.md docs/.vitepress/config.ts
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-generate articles" && git push)
