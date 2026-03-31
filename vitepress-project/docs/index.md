@@ -7,11 +7,11 @@ hero:
   tagline: "欢迎来到我的个人博客，在这里我分享对技术、编程和生活的见解、教程和思考。潜入一个知识和探索的世界，我们一起穿越不断发展的科技景观和超越。"
   actions:
     - theme: brand
-      text: 进入文章目录
-      link: /articles
-    - theme: alt
       text: 阅读最新文章
       link: /20250227/书生大模型训练营
+    - theme: alt
+      text: 进入文章目录
+      link: /articles
 
 features:
   - icon: 🤖❤️
