@@ -13,38 +13,38 @@ export default defineConfig({
     ],
     sidebar: [
     {
-      text: '20260331',
+      text: '2026年03月31日',
       items: [
         { text: 'tmux使用常用命令和技巧', link: '/20260331/tmux使用常用命令和技巧' }
       ]
     },
     {
-      text: '20260330',
+      text: '2026年03月30日',
       items: [
         { text: '服务器关闭图形化命令', link: '/20260330/服务器关闭图形化命令' }
       ]
     },
     {
-      text: '20251115',
+      text: '2025年11月15日',
       items: [
         { text: 'Linux安全运维手册', link: '/20251115/Linux安全运维手册' },
         { text: '服务器部署vllm指南', link: '/20251115/服务器部署vllm指南' }
       ]
     },
     {
-      text: '20250227',
+      text: '2025年02月27日',
       items: [
         { text: '书生大模型训练营', link: '/20250227/书生大模型训练营' }
       ]
     },
     {
-      text: '20240325',
+      text: '2024年03月25日',
       items: [
         { text: 'Linux使用clash指南', link: '/20240325/Linux使用clash指南' }
       ]
     },
     {
-      text: '20221024',
+      text: '2022年10月24日',
       items: [
         { text: 'Linux学习笔记', link: '/20221024/Linux学习笔记' }
       ]

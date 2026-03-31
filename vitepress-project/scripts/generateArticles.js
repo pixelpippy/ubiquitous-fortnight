@@ -7,6 +7,17 @@ const __dirname = path.dirname(__filename);
 
 const docsDir = path.join(__dirname, '../docs');
 
+// 日期格式化函数：20200220 -> 2020年02月20日
+function formatDate(dateStr) {
+  if (!/^\d{8}$/.test(dateStr)) {
+    return dateStr; // 如果不是8位数字，原样返回
+  }
+  const year = dateStr.slice(0, 4);
+  const month = dateStr.slice(4, 6);
+  const day = dateStr.slice(6, 8);
+  return `${year}年${month}月${day}日`;
+}
+
 // 获取所有日期文件夹和文章
 function getAllArticles() {
   const articles = {};
@@ -48,7 +59,8 @@ function generateArticlesMd(sortedArticles) {
 
   // sortedArticles 是已排序的数组，按新到旧顺序
   for (const [date, files] of sortedArticles) {
-    content += `## ${date}\n\n`;
+    const formattedDate = formatDate(date);
+    content += `## ${formattedDate}\n\n`;
     for (const file of files) {
       const linkPath = `/${date}/${file.name}`;
       content += `- [${file.name}](${linkPath})\n`;
@@ -65,13 +77,14 @@ function generateSidebarConfig(sortedArticles) {
 
   // sortedArticles 是已排序的数组，按新到旧顺序
   for (const [date, files] of sortedArticles) {
+    const formattedDate = formatDate(date);
     const items = files.map(file => ({
       text: file.name,
       link: `/${date}/${file.name}`
     }));
 
     sidebar.push({
-      text: date,
+      text: formattedDate,
       items: items
     });
   }
