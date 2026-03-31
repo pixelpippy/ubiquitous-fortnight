@@ -10,8 +10,8 @@ hero:
       text: 进入文章目录
       link: /articles
     - theme: alt
-      text: GitHub 主页
-      link: https://github.com/pixelpippy/
+      text: 阅读最新文章
+      link: /20250227/书生大模型训练营
 
 features:
   - icon: 🤖❤️
