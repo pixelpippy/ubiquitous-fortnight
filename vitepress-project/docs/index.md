@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: " Piexlpippy Blog"
-  text: "🏠 Study for a better life"
-  tagline: "欢迎来到我的个人博客，在这里我分享对技术、编程和生活的见解、教程和思考。潜入一个知识和探索的世界，我们一起穿越不断发展的科技景观和超越。"
+  name: " Vinson Blog"
+  text: "🏠 Happy blogging... ❤"
+  tagline: "欢迎来到我的个人博客，一个知识和探索的世界，在这里我分享对技术和生活的见解、思考。"
   actions:
     - theme: brand
       text: 阅读最新文章

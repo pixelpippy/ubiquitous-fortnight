@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   base: '/', 
   lang: 'zh-CN',
-  title: '学习笔记',
+  title: 'vinson的博客',
   description: '记录一些 Linux、LLM 与部署相关学习笔记。',
   themeConfig: {
     nav: [
