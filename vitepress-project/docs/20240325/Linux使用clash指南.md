@@ -1,5 +1,7 @@
 # Linux使用clash指南
 
+有时候我们需要在Linux系统上使用clash来科学上网，下面是我在Linux系统上使用clash的一个简单指南，主要是基于mihomo这个clash的linux版本来进行的。
+
 ## 下载和安装
 
 非图形化界面使用mihomo（https://github.com/MetaCubeX/mihomo）
