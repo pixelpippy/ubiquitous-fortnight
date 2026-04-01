@@ -4,7 +4,7 @@ title: 首页
 
 hero:
   name: " Vinson Blog"
-  text: "🏠 Happy blogging... ❤"
+  text: "🏠 Happy blogging..."
   tagline: "欢迎来到我的个人博客，一个知识和探索的世界，在这里我分享对技术和生活的见解、思考。"
   actions:
     - theme: brand
