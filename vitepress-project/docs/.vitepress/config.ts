@@ -11,10 +11,6 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '关于我', link: '/about' }
     ],
-    sidebarMenuLabel: '目录',
-    outline: [2, 3],
-    outlineTitle: '页面导航',
-    returnToTopLabel: '回到顶部',
     sidebar: [
     {
       text: '2026年03月31日',
